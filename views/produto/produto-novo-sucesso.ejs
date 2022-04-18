@@ -1,0 +1,23 @@
+
+<%- include('header')  %> 
+
+<h2>Produto Cadastrado - ID : <%= novoProduto.id %>  </h2>
+
+    <fieldset style="width: fit-content; ">
+        <label>Nome: </label> <%= novoProduto.nome %>
+        <br/><br/>
+        <label>Categoria: </label> <%= novoProduto.categoria %>
+        <br/><br/>
+        
+            <div>
+                <label>Descrição: </label>
+            </div>
+             <textarea cols="30" disabled> <%= novoProduto.descricao %></textarea>
+        
+        <br/>
+        <br/>
+        <label>Preço: </label> <input disabled type="number" name="preco" value="<%= novoProduto.preco %>"/> 
+    </fieldset>
+
+<%- include('footer')  %> 
+    

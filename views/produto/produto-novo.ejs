@@ -1,0 +1,32 @@
+
+<%- include('header')  %> 
+
+<h2>Cadastrar Produto</h2>
+
+<form action="/produto/produto-novo" method="post">
+    <fieldset style="width: fit-content; ">
+        <label>Nome: </label> <input type="text" name="nome"/> 
+        <br/><br/>
+        <label>Categoria: </label> <select name="categoria">
+            <option value="eletro">Eletrodomesticos</option>
+            <option value="smartphone">Smartphones</option>
+            <option value="livro">Livros</option>
+        </select>
+        <br/><br/>
+        
+            <div>
+                <label>Descrição: </label>
+            </div>
+             <textarea name="descricao" cols="30"></textarea>
+        
+        <br/>
+        <br/>
+        <label>Preço: </label> <input type="number" name="preco"/> 
+    </fieldset>
+    
+    <input style="margin: 10;margin-left: 5px;margin-top: 5px;" type="submit" value="Salvar" /> 
+    
+</form>
+
+<%- include('footer')  %> 
+    

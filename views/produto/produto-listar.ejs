@@ -1,0 +1,33 @@
+
+<%- include('header')  %> 
+
+<h2>Listar Produtos</h2>
+<div style="background-color: green;">
+    
+</div>
+<table border>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Categoria</th>
+            <th>Nome</th>
+            <th>Descrica</th>
+            <th>Preco</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for (let i = 0; i < produtos.length; i++) {
+            const p = produtos[i]; %>
+            <tr>
+                <td><%= p.id %></td>
+                <td><%= p.categoria %></td>
+                <td><%= p.nome %></td>
+                <td><%= p.descricao %></td>
+                <td><%= p.preco %></td>
+            </tr>
+        <% } %> 
+    </tbody>
+</table>
+
+<%- include('footer')  %> 
+    
